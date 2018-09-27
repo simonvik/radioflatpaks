@@ -1,0 +1,42 @@
+{
+  "app-id": "com.sdrangel.App",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "5.11",
+  "sdk": "org.kde.Sdk",
+  "command": "sdrangel",
+  "finish-args": [
+    "--socket=x11",
+    "--socket=wayland",
+    "--socket=pulseaudio",
+    "--filesystem=home:rw",
+    "--share=ipc",
+    "--device=all"
+  ],
+  "modules": [
+        "boost.json",
+        "libusb.json",
+        "soapysdr.json",
+        "soapylms7.json",
+    {
+      "name": "sdrangel",
+      "buildsystem": "cmake",
+      "cmake": true,
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "make-args": [
+        "-j4"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/f4exb/sdrangel"
+        },
+                {
+                    "type": "patch",
+                    "path": "sdrangel.patch"
+                }
+      ]
+    }
+  ]
+}

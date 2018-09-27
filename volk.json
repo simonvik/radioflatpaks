@@ -1,0 +1,25 @@
+{
+  "name": "volk",
+  "buildsystem": "cmake",
+  "cmake": true,
+  "config-opts": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_TESTING:BOOL=OFF",
+    "-DCMAKE_INSTALL_LIBDIR=lib"
+  ],
+  "disabled": false,
+  "make-args": [
+    "-j4"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/gnuradio/volk.git",
+      "branch": "v1.3"
+    }
+  ],
+  "builddir": true,
+  "modules": [
+    "python/python2-cheetah.json"
+   ]
+}
