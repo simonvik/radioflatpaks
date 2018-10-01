@@ -17,12 +17,17 @@
         "libusb.json",
         "soapysdr.json",
         "soapylms7.json",
+        "dsdcc.json",
+	"libad9361-iio.json",
+        "rtl-sdr.json",
     {
       "name": "sdrangel",
       "buildsystem": "cmake",
       "cmake": true,
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DLIBDSDCC_INCLUDE_DIR=/app/include/dsdcc",
+        "-DCM256CC_INCLUDE_DIR=/app/include/cm256cc"
       ],
       "make-args": [
         "-j4"
