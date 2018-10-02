@@ -1,0 +1,67 @@
+{
+    "app-id": "org.gnuradiocompanion.App",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.24",
+    "sdk": "org.gnome.Sdk",
+    "command": "gnuradio-companion",
+    "env": {
+        "PYTHON": "python2"
+    },
+    "finish-args": [
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--filesystem=home:rw",
+        "--share=ipc",
+        "--device=all",
+        "--env=PYTHONPATH=/app/lib/python2.7/dist-packages/"
+    ],
+    "modules": [
+        "boost.json",
+        "libusb.json",
+        "soapysdr.json",
+        "soapylms7.json",
+        "volk.json",
+        "uhd.json",
+        "log4cpp.json",
+        {
+            "name": "gnuradio-companion",
+            "buildsystem": "cmake",
+            "cmake": true,
+            "config-opts": [
+                "-DENABLE_INTERNAL_VOLK:BOOL=OFF",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DENABLE_GRC=ON",
+                "-DENABLE_GR_WXGUI=ON",
+                "-DPYQT4_FOUND=ON",
+                "-DPYTHON_EXECUTABLE=/usr/bin/python2",
+                "-DENABLE_GNURADIO_RUNTIME=ON",
+                "-DENABLE_PYTHON=ON"
+            ],
+            "make-args": [
+                "-j4"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/gnuradio/gnuradio.git"
+                }
+            ],
+            "modules": [
+                "python/python2-mako.json",
+                "python/python2-pycairo.json",
+                "python/python2-pygobject.json",
+                "python/python2-PyYAML.json",
+                "python/python2-wxpython.json",
+                "python/pygtk.json",
+                "gmp.json",
+                "fftw.json",
+                "swig.json"
+            ],
+            "builddir": true
+        },
+        "gr-osmosdr.json",
+        "gr-soapy.json",
+        "gr-satellites.json"
+    ]
+}
