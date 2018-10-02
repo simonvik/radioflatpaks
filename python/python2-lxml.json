@@ -1,8 +1,8 @@
 {
     "name": "python2-lxml",
     "buildsystem": "simple",
-    "env" : {
-	"XSLT_CONFIG": "pkg-config libxslt"
+    "env": {
+        "XSLT_CONFIG": "pkg-config libxslt"
     },
     "build-commands": [
         "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" lxml"
@@ -14,7 +14,7 @@
             "sha256": "36720698c29e7a9626a0dc802ef8885f8f0239bfd1689628ecd459a061f2807f"
         }
     ],
-    "modules" : [
+    "modules": [
         "../libxml2.json",
         "../libxslt.json"
     ]

@@ -1,0 +1,32 @@
+{
+    "name": "python2-wxpython",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" wxpython"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/bf/9b/2bf84e841575b633d8d91ad923e198a415e3901f228715524689495b4317/typing-3.6.6.tar.gz",
+            "sha256": "4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/14/80/8e1d34848fea10826763600ca7eeb7a76d914ccab7cb0d64c9c180c30a73/Pypubsub-4.0.0.zip",
+            "sha256": "7a15723835d1e55c67ed3329a009c18d2f2ff7b8d73cf0e01f3295781e0b5807"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
+            "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/dd/31/bd55ab40e406a026a7fda0bb5eb61f466682544ae91ac26267c750f5e618/wxPython-4.0.3.tar.gz",
+            "sha256": "8d0dfc0146c24749ce00d575e35cc2826372e809d5bc4a57bde6c89031b59e75"
+        }
+    ],
+    "modules": [
+        "../glu.json"
+    ]
+}

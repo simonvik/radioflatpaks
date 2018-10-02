@@ -1,0 +1,14 @@
+{
+    "name": "swig",
+    "config-opts": [
+        "--without-boost",
+        "--without-pcre"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "http://prdownloads.sourceforge.net/swig/swig-3.0.12.tar.gz",
+            "sha1": "5cc1af41d041e4cc609580b99bb3dcf720effa25"
+        }
+    ]
+}
