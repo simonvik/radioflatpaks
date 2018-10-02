@@ -50,7 +50,6 @@
             "modules": [
                 "python/python2-mako.json",
                 "python/python2-pycairo.json",
-                "python/python2-pygobject.json",
                 "python/python2-PyYAML.json",
                 "python/python2-wxpython.json",
                 "python/pygtk.json",
