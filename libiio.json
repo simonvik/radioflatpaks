@@ -1,20 +1,21 @@
 {
-  "name": "libiio",
-  "buildsystem": "cmake",
-  "cmake": true,
-  "cleanup": [ "/app/udev" ],
-  "config-opts": [
-    "-DUDEV_RULES_INSTALL_DIR=/app/udev"
-  ],
-  "make-args": [
-    "-j4"
-  ],
-  "sources": [
-    {
-      "type": "archive",
-      "url": "https://github.com/analogdevicesinc/libiio/archive/v0.14.zip",
-      "sha1": "46088fd68baf34ad04b6451ebc07941185124eab"
-    }
-  ]
+    "name": "libiio",
+    "buildsystem": "cmake",
+    "cmake": true,
+    "cleanup": [
+        "/app/udev"
+    ],
+    "config-opts": [
+        "-DUDEV_RULES_INSTALL_DIR=/app/udev"
+    ],
+    "make-args": [
+        "-j4"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/analogdevicesinc/libiio/archive/v0.14.zip",
+            "sha1": "46088fd68baf34ad04b6451ebc07941185124eab"
+        }
+    ]
 }
-

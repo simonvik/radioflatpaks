@@ -1,6 +1,6 @@
 {
-      "name": "fftw",
-      "config-opts": [
+    "name": "fftw",
+    "config-opts": [
         "--enable-shared",
         "--enable-single",
         "--enable-float",
@@ -10,16 +10,16 @@
         "--enable-avx2",
         "--enable-avx512",
         "--enable-avx-128-fma"
-      ],
-      "sources": [
+    ],
+    "sources": [
         {
-          "type": "archive",
-          "url": "http://www.fftw.org/fftw-3.3.6-pl1.tar.gz",
-          "sha256": "1ef4aa8427d9785839bc767f3eb6a84fcb5e9a37c31ed77a04e7e047519a183d"
+            "type": "archive",
+            "url": "http://www.fftw.org/fftw-3.3.6-pl1.tar.gz",
+            "sha256": "1ef4aa8427d9785839bc767f3eb6a84fcb5e9a37c31ed77a04e7e047519a183d"
         }
-      ],
-      "modules" : [
+    ],
+    "modules": [
         "python/python2-lxml.json",
         "python/python2-numpy.json"
-      ]
-    }
+    ]
+}

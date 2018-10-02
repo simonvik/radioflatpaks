@@ -1,43 +1,43 @@
 {
-  "app-id": "dk.gqrx.App",
-  "runtime": "org.kde.Platform",
-  "runtime-version": "5.11",
-  "sdk": "org.kde.Sdk",
-  "command": "gqrx",
-  "finish-args": [
-    "--socket=x11",
-    "--socket=wayland",
-    "--socket=pulseaudio",
-    "--filesystem=home:rw",
-    "--share=ipc",
-    "--device=all"
-  ],
-  "modules": [
+    "app-id": "dk.gqrx.App",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.11",
+    "sdk": "org.kde.Sdk",
+    "command": "gqrx",
+    "finish-args": [
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--filesystem=home:rw",
+        "--share=ipc",
+        "--device=all"
+    ],
+    "modules": [
         "boost.json",
         "libusb.json",
         "soapysdr.json",
         "soapylms7.json",
         "volk.json",
-        "uhd.json",    
+        "uhd.json",
         "gnuradio.json",
         "gr-osmosdr.json",
-    {
-      "name": "gqrx",
-      "buildsystem": "cmake",
-      "cmake": true,
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "make-args": [
-        "-j4"
-      ],
-      "sources": [
         {
-          "type": "archive",
-          "url": "https://github.com/csete/gqrx/releases/download/v2.11.5/gqrx-sdr-2.11.5-src.tar.xz",
-          "sha256": "793062ef7b49a3f986b82a255f949cdda42333107fc5fcea10fd13db74157744" 
+            "name": "gqrx",
+            "buildsystem": "cmake",
+            "cmake": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "make-args": [
+                "-j4"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/csete/gqrx/releases/download/v2.11.5/gqrx-sdr-2.11.5-src.tar.xz",
+                    "sha256": "793062ef7b49a3f986b82a255f949cdda42333107fc5fcea10fd13db74157744"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,18 +1,17 @@
 {
-  "name": "soapysdr",
-  "buildsystem": "cmake",
-  "cmake": true,
-  "config-opts": [
-    "-DCMAKE_BUILD_TYPE=Release"
-  ],
-  "make-args": [
-    "-j4"
-  ],
-  "sources": [
-    {
-      "type": "git",
-      "url": "https://github.com/pothosware/SoapySDR.git"
-    }
-  ]
+    "name": "soapysdr",
+    "buildsystem": "cmake",
+    "cmake": true,
+    "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release"
+    ],
+    "make-args": [
+        "-j4"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/pothosware/SoapySDR.git"
+        }
+    ]
 }
-
