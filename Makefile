@@ -1,6 +1,6 @@
 REPO=./repo
 
-all: GQRX.flatpak
+all: GQRX.flatpak com.sdrangel.App
 
 app: dk.gqrx.App.json com.sdrangel.App.json
 	rm -rf build1

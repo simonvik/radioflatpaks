@@ -17,6 +17,8 @@
         "libusb.json",
         "soapysdr.json",
         "soapylms7.json",
+        "libad9361-iio.json",
+        "rtl-sdr.json",
         "volk.json",
         "uhd.json",
         "gnuradio.json",
