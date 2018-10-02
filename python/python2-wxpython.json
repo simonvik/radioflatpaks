@@ -2,7 +2,7 @@
     "name": "python2-wxpython",
     "buildsystem": "simple",
     "build-commands": [
-        "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" wxpython"
+        "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" --ignore-installed wxpython"
     ],
     "sources": [
         {
