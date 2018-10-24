@@ -1,0 +1,22 @@
+{
+    "name": "dsdcc",
+    "buildsystem": "cmake",
+    "cmake": true,
+    "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DUSE_MBELIB=on"
+    ],
+    "make-args": [
+        "-j4"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/f4exb/dsdcc.git"
+        }
+    ],
+    "modules": [
+        "serialdv.json",
+        "mbelib.json"
+    ]
+}

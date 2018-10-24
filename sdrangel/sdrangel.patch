@@ -1,0 +1,11 @@
+diff -ur sdrangel.orig/CMakeLists.txt sdrangel/CMakeLists.txt
+--- sdrangel.orig/CMakeLists.txt	2018-09-27 20:56:51.965469964 +0200
++++ sdrangel/CMakeLists.txt	2018-09-27 21:06:35.127411316 +0200
+@@ -363,7 +363,6 @@
+ 
+ #install files and directories
+ install(DIRECTORY udev-rules DESTINATION share/sdrangel)
+-install(FILES udev-rules/install.sh DESTINATION share/sdrangel/udev-rules PERMISSIONS WORLD_EXECUTE)
+ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/sdrbase.rcc DESTINATION bin)
+ 
+ ##############################################################################

@@ -13,13 +13,13 @@
         "--device=all"
     ],
     "modules": [
-        "boost.json",
-        "libusb.json",
-        "soapysdr.json",
-        "soapylms7.json",
-        "dsdcc.json",
-        "libad9361-iio.json",
-        "rtl-sdr.json",
+        "common/boost.json",
+        "common/libusb.json",
+        "common/soapysdr.json",
+        "common/soapylms7.json",
+        "common/libad9361-iio.json",
+        "common/rtl-sdr.json",
+        "sdrangel/dsdcc.json",
         {
             "name": "sdrangel",
             "buildsystem": "cmake",
@@ -39,7 +39,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "sdrangel.patch"
+                    "path": "sdrangel/sdrangel.patch"
                 }
             ]
         }

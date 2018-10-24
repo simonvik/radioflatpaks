@@ -17,13 +17,13 @@
         "--env=PYTHONPATH=/app/lib/python2.7/dist-packages/"
     ],
     "modules": [
-        "boost.json",
-        "libusb.json",
-        "soapysdr.json",
-        "soapylms7.json",
-        "volk.json",
-        "uhd.json",
-        "log4cpp.json",
+        "common/boost.json",
+        "common/libusb.json",
+        "common/soapysdr.json",
+        "common/soapylms7.json",
+        "gnuradio/volk.json",
+        "gnuradio/uhd.json",
+        "gnuradio/log4cpp.json",
         {
             "name": "gnuradio-companion",
             "buildsystem": "cmake",
@@ -53,14 +53,14 @@
                 "python/python2-PyYAML.json",
                 "python/python2-wxpython.json",
                 "python/pygtk.json",
-                "gmp.json",
-                "fftw.json",
-                "swig.json"
+                "gnuradio/gmp.json",
+                "gnuradio/fftw.json",
+                "gnuradio/swig.json"
             ],
             "builddir": true
         },
-        "gr-osmosdr.json",
-        "gr-soapy.json",
-        "gr-satellites.json"
+        "gnuradio/gr-osmosdr.json",
+        "gnuradio/gr-soapy.json",
+        "gnuradio/gr-satellites.json"
     ]
 }

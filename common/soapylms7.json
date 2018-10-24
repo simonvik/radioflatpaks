@@ -1,0 +1,24 @@
+{
+    "name": "soapylms7",
+    "buildsystem": "cmake",
+    "cmake": true,
+    "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DENABLE_PCIE_XILLYBUS:BOOL=OFF",
+        "-DENABLE_EVB7COM:BOOL=OFF",
+        "-DENABLE_EVB7COM:BOOL=OFF",
+        "-DENABLE_GUI:BOOL=OFF",
+        "-DENABLE_DESKTOP:BOOL=OFF",
+        "-DENABLE_NOVENARF7:BOOL=OFF",
+        "-DENABLE_SIMD_FLAGS=SSE3"
+    ],
+    "make-args": [
+        "-j4"
+    ],
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/myriadrf/LimeSuite.git"
+        }
+    ]
+}

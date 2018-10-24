@@ -1,0 +1,11 @@
+diff -ur gr-osmosdr.orgi/lib/CMakeLists.txt gr-osmosdr/lib/CMakeLists.txt
+--- gr-osmosdr.orgi/lib/CMakeLists.txt	2018-10-02 12:10:31.224015995 +0200
++++ gr-osmosdr/lib/CMakeLists.txt	2018-10-02 12:12:10.407876786 +0200
+@@ -52,6 +52,7 @@
+ GR_OSMOSDR_APPEND_LIBS(
+     ${Boost_LIBRARIES}
+     ${GNURADIO_ALL_LIBRARIES}
++    ${LOG4CPP_LIBRARY}
+ )
+ 
+ ########################################################################
