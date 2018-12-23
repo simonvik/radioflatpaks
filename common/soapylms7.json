@@ -18,7 +18,8 @@
     "sources": [
         {
             "type": "git",
-            "url": "https://github.com/myriadrf/LimeSuite.git"
+            "url": "https://github.com/myriadrf/LimeSuite.git",
+            "commit": "59d51d5"
         }
     ]
 }

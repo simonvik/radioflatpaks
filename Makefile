@@ -2,7 +2,7 @@ REPO=./repo
 
 all: GQRX.flatpak com.sdrangel.App
 
-app: dk.gqrx.App.json com.sdrangel.App.json
+app: dk.gqrx.App.json com.github.sdrangel.App.json
 	rm -rf build1
 	rm -rf build2
 	flatpak-builder --force-clean --ccache --require-changes --repo=$(REPO)1 ./build1 dk.gqrx.App.json
