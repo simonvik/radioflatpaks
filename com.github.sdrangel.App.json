@@ -10,7 +10,8 @@
         "--socket=pulseaudio",
         "--filesystem=home:rw",
         "--share=ipc",
-        "--device=all"
+        "--device=all",
+        "--share=network"
     ],
     "modules": [
         "common/boost.json",
@@ -39,7 +40,8 @@
                 },
                 {
                     "type": "patch",
-                    "path": "sdrangel/sdrangel.patch"
+                    "path": "sdrangel/sdrangel.patch",
+                    "strip-components": 0
                 }
             ]
         }
