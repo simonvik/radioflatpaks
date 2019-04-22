@@ -19,7 +19,7 @@
     ],
     "builddir": true,
     "modules": [
-        "python/python2-six.json",
-        "python/python2-cheetah.json"
+        "../python/python2-six.json",
+        "../python/python2-cheetah.json"
     ]
 }

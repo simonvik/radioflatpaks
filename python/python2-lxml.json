@@ -15,7 +15,7 @@
         }
     ],
     "modules": [
-        "../libxml2.json",
-        "../libxslt.json"
+        "../common/libxml2.json",
+        "../common/libxslt.json"
     ]
 }

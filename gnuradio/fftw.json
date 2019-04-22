@@ -19,7 +19,7 @@
         }
     ],
     "modules": [
-        "python/python2-lxml.json",
-        "python/python2-numpy.json"
+        "../python/python2-lxml.json",
+        "../python/python2-numpy.json"
     ]
 }
