@@ -1,11 +1,13 @@
-diff -ur sdrangel.orig/CMakeLists.txt sdrangel/CMakeLists.txt
---- sdrangel.orig/CMakeLists.txt	2018-09-27 20:56:51.965469964 +0200
-+++ sdrangel/CMakeLists.txt	2018-09-27 21:06:35.127411316 +0200
-@@ -363,7 +363,6 @@
+diff --git CMakeLists.txt CMakeLists.txt
+index 36d486544..56c6142e0 100644
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -533,8 +533,6 @@ install(TARGETS sdrangelbench DESTINATION bin)
  
  #install files and directories
- install(DIRECTORY udev-rules DESTINATION share/sdrangel)
--install(FILES udev-rules/install.sh DESTINATION share/sdrangel/udev-rules PERMISSIONS WORLD_EXECUTE)
+ if (CMAKE_SYSTEM_NAME EQUAL "Linux")
+-install(DIRECTORY udev-rules DESTINATION share/sdrangel)
+-install(FILES udev-rules/install.sh DESTINATION share/sdrangel/udev-rules PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/sdrbase.rcc DESTINATION bin)
- 
- ##############################################################################
+ install(FILES desktop/sdrangel.desktop DESTINATION share/applications)
+ install(FILES desktop/sdrangel_icon.png DESTINATION share/pixmaps)
